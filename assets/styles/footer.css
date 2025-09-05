@@ -1,0 +1,106 @@
+#footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2C2F2F;
+  color: #ccc;
+  padding: 40px 20px;
+}
+
+.footer-links{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.footer-links a{
+  color: #ccc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover{
+  background: #707479;
+}
+
+.footer-contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.footer-contact p{
+  margin: 5px 0;
+}
+
+.footer-contact i{
+  margin-right: 8px;
+}
+
+.footer-left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1000px;
+  border-top: 1px solid #333;
+  padding-top: 20px ;
+}
+
+.footer-left p{
+  flex: 1;
+  text-align: left;
+  font-size: 14px;
+}
+
+.social-icons{
+  flex: 1;
+  text-align: right;
+}
+
+.social-icons a{
+  margin:  0 8px;
+  color: #ccc;
+  font-size: 30px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a .fa-facebook{
+  color:#3b5998;
+}
+
+.social-icons a .fa-instagram{
+  color: #e1306c;;
+}
+
+.social-icons a .fa-twitter{
+  color: #1da1f2;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .footer-links, .footer-contact{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-left{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left p, .social-icons{
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
